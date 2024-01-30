@@ -8,6 +8,8 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/ll_searchbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -29,9 +31,10 @@
 
 
     </LinearLayout>
-<TextView
-    android:id="@+id/tv_test"
+<Spinner
+    android:id="@+id/sp_search_result"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+    android:layout_height="wrap_content"
+    android:spinnerMode="dropdown" />
 
 </LinearLayout>
