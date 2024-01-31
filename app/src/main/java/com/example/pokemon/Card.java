@@ -1,8 +1,9 @@
 package com.example.pokemon;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Card {
+public class Card implements Serializable {
     public String category;
     public String id;
     public String illustrator;
@@ -23,30 +24,30 @@ public class Card {
     public Legal legal;
 }
 
-     class Ability{
+     class Ability implements Serializable{
         public String type;
         public String name;
         public String effect;
     }
 
-     class Attack{
+     class Attack implements Serializable{
         public ArrayList<String> cost;
         public String name;
         public String effect;
-        public int damage;
+        public String damage;
     }
 
-     class CardCount{
+     class CardCount implements Serializable{
         public int official;
         public int total;
     }
 
-     class Legal{
+     class Legal implements Serializable{
         public boolean standard;
         public boolean expanded;
     }
 
-     class Set{
+     class Set implements Serializable{
         public CardCount cardCount;
         public String id;
         public String logo;
@@ -54,7 +55,7 @@ public class Card {
         public String symbol;
     }
 
-     class Variants{
+     class Variants implements Serializable{
         public boolean firstEdition;
         public boolean holo;
         public boolean normal;
@@ -62,7 +63,7 @@ public class Card {
         public boolean wPromo;
     }
 
-     class Weakness{
+     class Weakness implements Serializable{
         public String type;
         public String value;
     }

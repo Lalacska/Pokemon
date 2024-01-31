@@ -37,4 +37,10 @@
     android:layout_height="wrap_content"
     android:spinnerMode="dropdown" />
 
+    <Button
+        android:id="@+id/btn_battle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start a battle"/>
+
 </LinearLayout>

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Pokemon"
         tools:targetApi="31">
         <activity
+            android:name=".BattleActivity"
+            android:exported="false" />
+        <activity
             android:name=".CardActivity"
             android:exported="false" />
         <activity
