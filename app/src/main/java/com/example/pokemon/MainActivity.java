@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AtomicInteger cardsReceived = new AtomicInteger(0);
 
         for (int i = 0; i < 10; i++) {
-            final int random = new Random().nextInt(17226);
+            final int random = new Random().nextInt(17225);
             everyCard = cards.get(random);
             getCard(everyCard.id, card1 -> {player.cards.add(card);
 
